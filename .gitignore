@@ -6,3 +6,4 @@ reports/
 ## Ignored files
 phantomjsdriver.log
 credentials.txt
+testFs.js
