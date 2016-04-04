@@ -1,0 +1,58 @@
+{
+    "src_folders": ["getIp"],
+    "output_folder": "reports",
+    "custom_commands_path": "",
+    "custom_assertions_path": "",
+    "page_objects_path": "",
+    "globals_path": "",
+
+    "selenium": {
+        "start_process": true,
+        "server_path": "bin/MAC/selenium-server-standalone-2.48.2.jar",
+        "log_path": "logs",
+        "host": "127.0.0.1",
+        "port": 4444,
+        "cli_args": {
+            "webdriver.chrome.driver": "bin/MAC/chromedriver",
+            "webdriver.ie.driver": ""
+        }
+    },
+
+    "test_settings": {
+        "default": {
+            "launch_url": "http://localhost",
+            "selenium_port": 4444,
+            "selenium_host": "localhost",
+            "silent": true,
+            "skip_testcases_on_fail": true,
+            "screenshots": {
+                "enabled": false,
+                "path": "./screenshots/"
+            },
+            "desiredCapabilities": {
+                "browserName": "firefox",
+                "javascriptEnabled": true,
+                "acceptSslCerts": true
+            }
+        },
+
+        "chrome": {
+            "desiredCapabilities": {
+                "browserName": "chrome",
+                "javascriptEnabled": true,
+                "acceptSslCerts": true
+            }
+        },
+
+        "phantom": {
+            "desiredCapabilities": {
+                "browserName": "phantomjs",
+                "acceptSslCerts": true,
+                "phantomjs.cli.args": "--webdriver=5558 --webdriver-selenium-grid-hub=http://localhost:4444 --ignore-ssl-errors=true --ssl-protocol=any --debug=true --local-to-remote-url-access=true --web-security=false",
+                "phantomjs.page.settings.userAgent" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36",
+                "javascriptEnabled": true,
+                "phantomjs.binary.path": "bin/MAC/phantomjs"
+            }
+        }
+    }
+}

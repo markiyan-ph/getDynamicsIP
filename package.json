@@ -1,0 +1,13 @@
+{
+  "name": "getDynamicsIP",
+  "version": "1.0.0",
+  "description": "Get ip from remote machine",
+  "main": "",
+  "dependencies": {
+    "nodemailer": "^2.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {},
+  "author": "Markiyan Keleman",
+  "license": "ISC"
+}

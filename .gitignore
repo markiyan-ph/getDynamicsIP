@@ -1,0 +1,8 @@
+## Ignored folders
+node_modules/
+logs/
+reports/
+
+## Ignored files
+phantomjsdriver.log
+credentials.txt
